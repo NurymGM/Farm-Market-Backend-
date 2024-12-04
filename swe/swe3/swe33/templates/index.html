@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Farmers Market</title>
+</head>
+<body>
+    <div class="header">
+        <h1 style="background-color: rgba(0, 0, 0, 0.5); color: rgb(240, 240, 240); padding: 10px 20px; border-radius: 20px; display: inline-block; text-align: center;">
+            Welcome to our Farmers Market
+        </h1>
+        <br>
+        <h2 style="background-color: rgba(0, 0, 0, 0.5); color: rgb(240, 240, 240); padding: 10px 20px; border-radius: 20px; display: inline-block; text-align: center; margin-top: 10px;">
+            Long time no see Admin!
+        </h2>
+        
+    </div>
+    <ol class="container">
+        <button onclick="window.open('/admin', '_blank');">Login</button>
+    </ol>    
+</body>
+</html>
+
+{% endblock %}
